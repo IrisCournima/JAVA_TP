@@ -1,0 +1,27 @@
+package simplon.formation.test;
+
+import org.junit.Before;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+
+import simplon.formation.parametre.NombrePremier;
+
+@RunWith(Parameterized.class)
+public class NombrePremierTest {
+	private int inputNumber;
+	private Boolean expectedResult;
+	private NombrePremier nombrePremier;
+	
+	@Before
+	public void initialize(){
+		nombrePremier = new NombrePremier();
+	}
+
+	public NombrePremierTest(int inputNumber, Boolean expectedResult) {
+		super();
+		this.inputNumber = inputNumber;
+		this.expectedResult = expectedResult;
+	}
+	
+
+}

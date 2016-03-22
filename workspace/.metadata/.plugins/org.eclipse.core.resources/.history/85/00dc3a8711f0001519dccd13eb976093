@@ -1,0 +1,5 @@
+package com.fomration.dao;
+
+public class ClientDaoMysql implements IClientDao{
+
+}

@@ -1,0 +1,21 @@
+package com.formation.test;
+
+import com.formation.dao.IClientDao;
+import com.formation.domaine.Client;
+
+public class FactoryTest {
+
+	public static void main(String[] args) {
+		IClientDao clientDao = DaoFactory.getClientDao();
+		ICongeGao = DaoFactory.getCongDAO();
+		List<Client> clients = clientDao.getAllClient();
+		System.out.println("\n--------------------------------------------------");
+		for (Client empl : clients) {
+			System.out.print(empl);
+			System.out.print("\t" + empl.getNom() + "\t |");
+			System.out.print("\t" + empl.getPrenom() + "\t |");
+			System.out.println("\n--------------------------------------------------");
+		}
+	}
+
+}

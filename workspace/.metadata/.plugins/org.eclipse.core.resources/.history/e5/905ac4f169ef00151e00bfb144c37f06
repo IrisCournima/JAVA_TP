@@ -1,0 +1,25 @@
+package simplon.formation;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class HelloimplTest {
+	
+	private Hello hello;
+
+	@Test
+	public void test() {
+		Hello hello = new Helloimpl();
+		String result = hello.hello("Junit");
+		assertNotNull(result);
+		assertEquals("Hello Junit", result);
+	}
+	
+	@Test (expected = IllegalArgumentException.class)
+	public void helloShouldThrowAnException_For_NameIsNull(){
+		Hello hello = new Helloimpl();
+		hello.hello("");
+	}
+
+}

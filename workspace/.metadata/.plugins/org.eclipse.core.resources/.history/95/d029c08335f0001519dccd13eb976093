@@ -1,0 +1,90 @@
+package com.formation.dao;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import com.formation.domaine.Client;
+import com.formation.domaine.Conge;
+
+public class CongeDaoMysql implements ICongeDao {
+	
+	private Connection conn =null;
+	private Statement state = null;
+	private ResultSet result = null;
+
+	public CongeDaoMysql(Connection conn2) {
+		this.conn=conn2;
+	}
+
+	@Override
+	public void insertConge(Conge Conge) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void updateConge(Conge Conge) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void removeConge(int id) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Conge getConge(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@SuppressWarnings("deprecation")
+	@Override
+	public List<Conge> getAllConges() {
+		List<Conge> listConges=new ArrayList<>();
+		 Conge conge=null;
+		 /*try {
+
+		 state = conn.createStatement();
+		 result = state.executeQuery("SELECT * FROM client");
+		 while (result.next()) {
+			 conge=new Conge();
+			 conge.setId(result.getInt("id"));
+			 conge.setEmpId(result.getInt("empId"));
+			 conge.setDebut(result.getDate("debut"));
+			 conge.setFin(result.getDate("fin"));
+			 conge.setEtat(result.getString("etat"));
+			 listConges.add(conge);
+		 }
+		 } catch (SQLException e) {
+		 e.printStackTrace();
+		 }*/
+		 SimpleDateFormat formatter = new SimpleDateFormat("dd-MMM-yyyy");
+		 Date date = formatter.parse("2016-08-08");
+		 conge=new Conge();
+		 conge.setId(1);
+		 conge.setEmpId(01);
+		 conge.setDebut(date);
+		 conge.setFin(new Date("2016-09-08"));
+		 conge.setEtat("ok");
+		 listConges.add(conge);
+		 
+		 conge.setId(2);
+		 conge.setEmpId(02);
+		 conge.setDebut( new Date("2017-08-08"));
+		 conge.setFin(new Date("2018-09-08"));
+		 conge.setEtat("nope");
+		 listConges.add(conge);
+		 
+		return listConges;
+	}
+
+}

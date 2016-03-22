@@ -1,0 +1,56 @@
+package com.formation.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.formation.domaine.Client;
+import com.formation.domaine.Conge;
+
+public class CongeDaoMysql implements ICongeDao {
+
+	@Override
+	public void insertConge(Conge Conge) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void updateConge(Conge Conge) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void removeConge(int id) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Conge getConge(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Conge> getAllConges() {
+		List<Conge> listConges=new ArrayList<>();
+		 Conge conge=null;
+		 try {
+
+		 state = conn.createStatement();
+		 result = state.executeQuery("SELECT * FROM client");
+		 while (result.next()) {
+		 client=new Client();
+		 client.setId(result.getInt("id"));
+		 client.setNom(result.getString("nom"));
+		 client.setPrenom(result.getString("prenom"));
+		 employes.add(client);
+		 }
+		 } catch (SQLException e) {
+		 e.printStackTrace();
+		 }
+		return listConges;
+	}
+
+}

@@ -1,0 +1,14 @@
+package simplon.formation;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class HelloimplTest {
+
+	@Test
+	public void test() {
+		Hello hello = new HelloImpl();
+	}
+
+}

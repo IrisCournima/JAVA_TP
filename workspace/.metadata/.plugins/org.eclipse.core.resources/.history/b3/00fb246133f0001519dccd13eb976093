@@ -1,0 +1,13 @@
+package com.formation.test;
+
+import com.formation.dao.IClientDao;
+
+public class FactoryTest {
+
+	public static void main(String[] args) {
+		IClientDao clientDao = DaoFactory.getClientDao();
+		ICongeGao = DaoFactory.getCongDAO();
+		List<Client> clients = clientDao.getAllClient();
+	}
+
+}

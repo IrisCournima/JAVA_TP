@@ -1,0 +1,23 @@
+package simplon.formation;
+
+
+
+public class Helloimpl implements Hello {
+
+	@Override
+	public String hello(String name) {
+		
+		String retour = "Hello "+name;
+		if (name ==null ||name.length() == 0) {
+			throw new IllegalArgumentException();
+			
+		}else{
+			return retour;
+		}
+		
+		
+	}
+	
+	
+
+}

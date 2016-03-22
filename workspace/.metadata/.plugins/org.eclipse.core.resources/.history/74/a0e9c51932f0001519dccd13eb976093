@@ -1,0 +1,7 @@
+package com.formation.dao.factory;
+
+import com.formation.singleton.SingletonConnexion;
+
+public class DaoFactory {
+	protecter static final Connection conn = SingletonConnexion.getInstance().getConnexion();
+}

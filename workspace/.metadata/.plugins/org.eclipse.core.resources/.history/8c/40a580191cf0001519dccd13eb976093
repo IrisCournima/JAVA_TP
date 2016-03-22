@@ -1,0 +1,26 @@
+package com.fomration.test;
+
+import static org.junit.Assert.*;
+
+import java.util.List;
+
+import org.junit.Test;
+
+import com.fomration.dao.ClientDaoMysql;
+import com.formation.domaine.Client;
+
+public class TestDao {
+
+	public static void main(String[] args) {
+		 ClientDaoMysql employeDao = new
+		ClientDaoMysql(SingletonConnexion.getInstance().getConnexion()); 
+		 List<Client> clients = employeDao.getAllClient();
+		 System.out.println("\n--------------------------------------------------");
+		 for (Client empl : clients) {
+		 System.out.print("\t" + empl.getId() + "\t |");
+		 System.out.print("\t" + empl.getNom() + "\t |");
+		 System.out.print("\t" + empl.getPrenom() + "\t |");
+		 System.out.println("\n--------------------------------------------------");
+		 }
+
+}

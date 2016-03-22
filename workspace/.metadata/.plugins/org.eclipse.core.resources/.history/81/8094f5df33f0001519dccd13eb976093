@@ -1,0 +1,30 @@
+package com.formation.test;
+
+import java.util.List;
+
+import com.formation.dao.IClientDao;
+import com.formation.dao.ICongeDao;
+import com.formation.domaine.Client;
+import com.formation.domaine.Conge;
+
+public class FactoryTest {
+
+	public static void main(String[] args) {
+		IClientDao clientDao = DaoFactory.getClientDao();
+		ICongeDao congeDao = DaoFactory.getCongDAO();
+		List<Client> clients = clientDao.getAllClient();
+		System.out.println("\n--------------------------------------------------");
+		for (Client empl : clients) {
+			System.out.print(empl);
+			System.out.println("\n--------------------------------------------------");
+		}
+		
+		List<Conge> conges = congeDao.getAllConge();
+		System.out.println("\n--------------------------------------------------");
+		for (Conge conge : conges) {
+			System.out.print(conge);
+			System.out.println("\n--------------------------------------------------");
+		}
+	}
+
+}

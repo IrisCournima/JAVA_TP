@@ -1,0 +1,14 @@
+package com.fomration.dao;
+
+import java.util.List;
+
+import com.formation.domaine.Client;
+
+public interface IclientDao {
+	public void insertClient(Client Client);
+	public void updateClient(Client Client);
+	public void removeClient(int empId);
+	public void getClient(int empId);
+	public void login(String login, String passwd);
+	public List<Client> getAllClient();
+}

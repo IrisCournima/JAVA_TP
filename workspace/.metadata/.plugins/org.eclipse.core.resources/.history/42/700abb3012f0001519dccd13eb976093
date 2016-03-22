@@ -1,0 +1,52 @@
+package com.fomration.dao;
+
+import java.beans.Statement;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.util.List;
+
+import com.formation.domaine.Client;
+
+public class ClientDaoMysql implements IClientDao{
+	
+	private Connection conn =null;
+	private Statement state = null;
+	private ResultSet result = null;
+
+	@Override
+	public void insertClient(Client Client) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void updateClient(Client Client) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void removeClient(int empId) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void getClient(int empId) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void login(String login, String passwd) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<Client> getAllClient() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

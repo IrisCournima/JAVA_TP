@@ -1,0 +1,5 @@
+package com.formation.dao.factory;
+
+public class DaoFactory {
+
+}

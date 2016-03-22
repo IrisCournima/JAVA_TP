@@ -1,0 +1,10 @@
+package Modele;
+
+public class Conge {
+	private int id;
+	private int empId;
+	private Date debut;
+	private Date fin;
+	private String etat;
+
+}

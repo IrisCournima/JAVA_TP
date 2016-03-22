@@ -1,0 +1,7 @@
+package com.fomration.dao;
+
+import com.formation.domaine.Conge;
+
+public interface ICongeDao {
+	public void insertConge(Conge Conge);
+}

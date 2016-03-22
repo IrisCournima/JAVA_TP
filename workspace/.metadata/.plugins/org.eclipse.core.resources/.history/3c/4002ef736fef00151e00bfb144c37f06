@@ -1,0 +1,21 @@
+package simplon.formation;
+import java.time.LocalDate;
+
+
+public class holidaysHelper {
+	public LocalDate identifyEasterDay(int year){
+		int a = year /100;
+		int b = year % 100;
+		int c = (3 * (a + 25))/4;
+		int d =(3 * (a + 25))%4;
+		int e = (8 * (a +11))  /25;
+		int f = (5 * a + b) % 19;
+		int g = (19 *f + c -e) % 30;
+		int h = (f + 11 *g)/319;
+		int j = (60 * (5- d) + b) / 4;
+		int k = (60 * (5 - d) + b) % 4;
+		int m = (g -h + m +114)/31;
+		int n = (g -h + m +114)%31;
+		return LocalDate.of(year, month, dayOfMonth);
+	}
+}

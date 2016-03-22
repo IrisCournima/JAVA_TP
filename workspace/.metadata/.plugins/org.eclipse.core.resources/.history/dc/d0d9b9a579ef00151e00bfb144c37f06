@@ -1,0 +1,33 @@
+package simplon.formation.test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import simplon.formation.parametre.NombrePremier;
+
+public class NombrePremierTest {
+	private int inputNumber;
+	private Boolean expectedResult;
+	private NombrePremier nombrePremier;
+	
+	@Before
+	public void initialize(){
+		nombrePremier = new NombrePremier();
+	}
+
+	public Nombsqxqsx(int inputNumber, Boolean expectedResult) {
+		super();
+		this.inputNumber = inputNumber;
+		this.expectedResult = expectedResult;
+	}
+	
+	
+	
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}
