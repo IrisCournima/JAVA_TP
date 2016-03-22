@@ -1,0 +1,23 @@
+package com.formation.observer;
+
+public class Horloge implements Observable {
+
+	@Override
+	public void addObservateur(Observateur obs) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void updateObservateur() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void delObservateur() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,36 @@
+package com.formation.observer;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
+
+public class Horloge implements Observable {
+	private Calendar cal;
+	private String hour = "";
+	private List listObservateur = new ArrayList<Observateur>();
+	
+	
+	public void run(){
+		
+	}
+	@Override
+	public void addObservateur(Observateur obs) {
+		this.listObservateur.add(obs);
+
+	}
+
+	@Override
+	public void updateObservateur() {
+		for(Observateur obs : this.listObservateur){
+			
+		}
+
+	}
+
+	@Override
+	public void delObservateur() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.formation.observer;
+
+public interface Observable {
+
+}

@@ -1,0 +1,26 @@
+package com.formation.test;
+
+import javax.swing.JFrame;
+
+import com.formation.observer.Observateur;
+
+public class test extends JFrame {
+
+	public ObserverTest(){
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setLocationRelativeTo(null);
+	}
+	
+	
+	public test() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

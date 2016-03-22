@@ -1,0 +1,36 @@
+package com.formation.test;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+import com.formation.observer.Horloge;
+import com.formation.observer.Observateur;
+
+public class test extends JFrame {
+
+	private static final long serialVersionUID=1l;
+	private JLabel label = new JLabel();
+	
+	
+	public ObserverTest(){
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setLocationRelativeTo(null);
+		this.setResizable(false);
+		this.setSize(20,80);
+		
+		this.horloge = new Horloge();
+	}
+	
+	
+	public test() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
